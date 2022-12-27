@@ -1,0 +1,81 @@
+
+
+.ww-80{width: 80%;}
+.ww-90{width: 90%;}
+.ww-100{width: 100%;}
+
+.fs-11px{font-size: 11px;}
+.fs-14px{font-size: 14px;}
+.fs-16px{ font-size: 16px;}
+.fs-18px{ font-size: 18px;}
+.fs-20px{ font-size: 20px;}
+.fs-22px{font-size: 22px;}
+.fs-30px{ font-size: 30px;}
+.fs-37px{ font-size: 37px;}
+.lh-1em{line-height: 1em;}
+.lh-12em{line-height: 1.2em;}
+.lh-13em{line-height: 1.3em;}
+.lh-15em{ line-height: 1.5em;}
+
+.formInput{
+    display: inline-block;
+    width: 100%;
+    display: block;
+    padding: 15px 20px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #2a3135;
+    background: #f3f8fb;
+    background-clip: padding-box;
+    transition: all .2s ease-in-out 0s;
+    border: none;
+    border-radius: 0.3125rem;
+}
+.formButton{
+    color: rgb(255, 255, 255);
+    border: 0px solid rgb(15, 15, 16);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    white-space: normal;
+    font-size: 100%;
+    font-weight: 600;
+    transition: all .2s ease-in-out 0s;
+    min-width: 85px;
+}
+@media screen and (min-width: 480px) {
+
+    .ww-480-65{width: 65%;}
+    .ww-480-90{width: 90%;}
+    .fs-480-14px{font-size: 14px;}
+    .fs-480-16px{font-size: 16px;}
+    .fs-480-18px{font-size: 18px;}
+    .fs-480-20px{font-size: 20px;}
+    .fs-480-22px{font-size: 22px;}
+    .fs-480-25px{font-size: 25px;}
+    .fs-480-28px{font-size: 28px;}
+    .fs-480-30px{font-size: 30px;}
+    .fs-480-40px{font-size: 40px;}
+    .fs-480-50px{font-size: 50px;}
+}
+@media screen and (min-width:600px) {
+    .w-600-100{width: 100%;}
+}
+@media screen and (min-width:768px) {
+    .w-768-40{width: 40%;}
+    .w-768-70{width: 70%;} 
+    .w-768-72{width: 72%;}  
+}
+@media screen and (min-width:1024px) {
+    .fs-1024-25px{font-size: 25px;}
+}
+.gfont{
+    font-size: 16px;
+    margin-bottom: 0.1rem;
+    color: white;
+}
+.bginner{
+    background-position: center center!important;
+    background-size: cover!important;
+    background-repeat: repeat repeat!important;
+}
