@@ -5,10 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./bootstrap-5.2.3-dist/css/bootstrap.css" rel="stylesheet">
-  <link href="./fontawsome/css/all.css" rel="stylesheet"> 
+  <link href="./fontawsome/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="./build/css/intlTelInput.css">
+  <link rel="stylesheet" href="./build/css/demo.css">
+ 
   <link href="mystyle.css" rel="stylesheet">
   <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
   <script src="./fontawsome/js/all.js"></script>
+  <script src="./build/js/intlTelInput.js"></script>
 </head>
 <body>
     <div class="text-center p-2" style="background-color:#0040DB;">
@@ -88,7 +92,7 @@
                     <label style="font-size: 0.875rem; margin-bottom: 0.5rem; color: #091E42; display: inline-block;">
                         Cell Phone <span>*</span>
                     </label>
-                    <input placeholder="Cell Phone" class="formInput">
+                    <input placeholder="Cell Phone" class="formInput" id="phone" name="phone" type="tel">                    
                 </div>
                 <div class="mx-auto pb-2" style="width: 80%;">
                     <label style="font-size: 0.875rem; margin-bottom: 0.5rem; color: #091E42; display: inline-block;">
@@ -298,5 +302,32 @@
     <div class="text-center p-2" style="color: #7A879A;">
         <p class="fs-11px lh-13em">	Copyright© 2012 – 2022 GETMPX – All Rights Reserved. <a href="https://app.getmpx.com/v2/preview/FsgSGgC7IGt9BRiNHch7" title="Privacy Policy">Privacy Policy</a>. This site is not a part of the Facebook website or Facebook Inc. Additionally, This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
     </div>
+
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          // allowDropdown: false,
+          // autoHideDialCode: false,
+          // autoPlaceholder: "off",
+          // dropdownContainer: document.body,
+          // excludeCountries: ["us"],
+          // formatOnDisplay: false,
+          // geoIpLookup: function(callback) {
+          //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+          //     var countryCode = (resp && resp.country) ? resp.country : "";
+          //     callback(countryCode);
+          //   });
+          // },
+          // hiddenInput: "full_number",
+          // initialCountry: "auto",
+          // localizedCountries: { 'de': 'Deutschland' },
+          // nationalMode: false,
+          // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+          // placeholderNumberType: "MOBILE",
+          // preferredCountries: ['cn', 'jp'],
+          // separateDialCode: true,
+          utilsScript: "build/js/utils.js",
+        });
+      </script>
 </body>
 </html>
